@@ -36,7 +36,7 @@ section {
 }
 
 .card {
-  @apply md:p-10 sm:p-8 p-8 flex md:gap-4 sm:gap-2 gap-2 items-start rounded-3xl bg-gradient-to-b from-white to-neutral-100;
+  @apply md:p-10 sm:p-6 p-6 flex md:flex-row sm:flex-col flex-col md:gap-4 sm:gap-2 gap-2 items-start rounded-3xl bg-gradient-to-b from-white to-neutral-100;
 }
 .card--highlight {
   @apply bg-gradient-to-b from-yellow-50 to-neutral-100;
@@ -72,4 +72,8 @@ h4 {
 
 h5 {
   @apply lg:text-xl md:text-lg text-lg;
+}
+
+p {
+  @apply lg:text-2xl md:text-xl text-xl;
 }

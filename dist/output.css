@@ -1176,10 +1176,6 @@ h1,h2,h3,h4,h5 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -2574,6 +2570,7 @@ section {
 
 .card {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
   border-radius: 1.5rem;
@@ -2582,18 +2579,20 @@ section {
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #f5f5f5 var(--tw-gradient-to-position);
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 @media (min-width: 640px) {
   .card {
+    flex-direction: column;
     gap: 0.5rem;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .card {
+    flex-direction: row;
     gap: 1rem;
     padding: 2.5rem;
   }
@@ -2725,6 +2724,25 @@ h5 {
   h5 {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
