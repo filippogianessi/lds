@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Apfel;
+  src: url(../src/apfel/ApfelGrotezk-Regular.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Apfel;
+  src: url(../src/apfel/ApfelGrotezk-Mittel.otf);
+  font-weight: 600;
+}
+@layer base {
+  html {
+    font-family: "Apfel", system-ui, sans-serif;
+  }
+  h1,h2,h3,h4,h5 {
+    font-weight: 600;
+  }
+}
+
+section {
+  @apply container mx-auto px-4;
+}
+
+.button {
+  @apply py-4 px-8 rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-2xl ;
+}
+.button--primary {
+  @apply bg-neutral-950 text-white hover:bg-yellow-950 shadow-md transition ease-in-out;
+}
+.button--secondary {
+  @apply border border-neutral-300 bg-neutral-100  text-neutral-700  hover:border-neutral-950 hover:text-neutral-800 hover:bg-neutral-100 transition ease-in-out;
+}
+
+.card {
+  @apply p-10 flex gap-4 items-start rounded-3xl bg-gradient-to-b from-white to-neutral-100;
+}
+.card--highlight {
+  @apply bg-gradient-to-b from-yellow-50 to-neutral-100;
+}
+
+.badge {
+  @apply flex gap-2 py-2 px-4 rounded-2xl text-2xl;
+}
+.badge--success {
+  @apply bg-emerald-50 text-emerald-950;
+}
+.badge--neutral {
+  @apply bg-neutral-100 text-neutral-950;
+}
