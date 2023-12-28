@@ -10,17 +10,17 @@
     <div class="hidden sm:hidden md:flex flex-row justify-between items-center py-4 px-8 ">
       <img src="src/logo-desk.svg" alt="">
       <ul class="flex lg:gap-8 md:gap-4">
-        <li><a href="pages/styleguide.html" class="text-xl">Styleguide</a></li>
-        <li><a href="" class="text-xl">Our Offer</a></li>
-        <li><a href="" class="text-xl">How it works</a></li>
-        <li><a href="" class="text-xl">Upcoming</a></li>
-        <li><a href="" class="text-xl">Request a course</a></li>
+        <!-- <li><a href="pages/styleguide.html" class="text-xl">Styleguide</a></li> -->
+        <li><a href="#our-offer" class="text-xl">Our Offer</a></li>
+        <li><a href="#how-it-works" class="text-xl">How it works</a></li>
+        <li><a href="#upcoming" class="text-xl">Upcoming</a></li>
+        <li><a href="https://27ooqwgxabp.typeform.com/to/kdO2QGAR" target="_blank" class="text-xl">Request a course ↗︎</a></li>
       </ul>
     </div>
     <div class="flex sm:flex md:hidden flex-row justify-between items-center py-4 px-4">
       <img src="src/logo-mobile.svg" alt="">
       <ul class="flex gap-8">
-        <li><a href="" class="text-xl">Request a course</a></li>
+        <li><a href="" class="text-xl">Request a course ↗︎</a></li>
       </ul>
     </div>
   </header>
@@ -28,7 +28,7 @@
     <h1>Learn Design Systems in Hours.</h1>
     <p class="text-2xl">Live UX/UI courses and resources to accelerate your career</p>
   </section>
-  <section class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
+  <section id="our-offer" class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
     <h2>Our offer</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-4">
       <div class="card flex-col">
@@ -48,7 +48,7 @@
           </p>
         </div>
         <div class="gap-2">
-          <h3 class="text-emerald-950">320€</h3>
+          <h3 class="text-emerald-950"><s class="text-neutral-500">400</s> 320€</h3>
           <p>
             → Basic Figma skills required
           </p>
@@ -56,7 +56,12 @@
             → 8 Seats available
           </p>
         </div>
-        <button autofocus type="button" class="button button--primary button--default animate-pulse">🗓 Book Your Seat →</button>
+        <button 
+          onclick="window.location.href='https://27ooqwgxabp.typeform.com/to/kdO2QGAR';"
+          autofocus type="button"
+          class="button button--primary button--default animate-pulse">
+          🗓 Book Your Seat →
+        </button>
       </div>
       <div class="card flex-col">
         <div class="flex gap-2">
@@ -76,7 +81,7 @@
           </p>
         </div>
         <div class="gap-2">
-          <h3 class="text-emerald-950">240€</h3>
+          <h3 class="text-emerald-950"><s class="text-neutral-500">300</s> 240€</h3>
           <p>
             → No skills required
           </p>
@@ -84,47 +89,56 @@
             → 8 Seats available
           </p>
         </div>
-        <button class="button button--primary button--default">🗓 Book Your Seat →</button>
+        <button 
+        onclick="window.location.href='https://27ooqwgxabp.typeform.com/to/kdO2QGAR';"
+        autofocus type="button"
+          class="button button--primary button--default">
+          🗓 Book Your Seat →
+        </button>
       </div>
     </div>
   </section>
-  <section class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
+  <section id="how-it-works" class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
     <h2>How it works</h2>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div class="card card--highlight flex-col">
         <img src="src/icons/asterisk.svg" alt="">
         <h3>Grab your ticket</h3>
         <p>Select the course you want to start, follow the form and grab your ticket.</p>
-        <button class="button button--primary button--small">Start Here</button>
+        <button onclick="window.location.href='https://27ooqwgxabp.typeform.com/to/kdO2QGAR';" class="button button--primary button--small">Start here</button>
       </div>
       <div class="card flex-col">
         <img src="src/icons/boom.svg" alt="">
         <h3>Booking reaches minimum</h3>
         <p>50% seat is the minimum for kickstarting a course, share it everywhere to make it start!</p>
-        <button class="button button--secondary button--small">Share</button>
+        <button onclick="window.location.href='https://2024.cssday.it/workshop/design-system.html';" class="button button--secondary button--small">Copy URL</button>
       </div>
       <div class="card flex-col">
         <img src="src/icons/stars.svg" alt="">
         <h3>We schedule together</h3>
         <p>After reaching the minimum we’re going to define a date that suits every ticket holder.</p>
-        <button class="button button--secondary button--small">Ask More Info</button>
+        <button onclick="window.location.href='https://instagram.com/learn_designsystems';" class="button button--secondary button--small">Ask more info</button>
       </div>
     </div>
   </section>
-  <section class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
-    <h2>Upcoming</h2>
-    <div class="border-t border-neutral-950 pt-2 grid lg:grid-cols-5 md:grid-cols-1 lg:gap-4 md:gap-2 ">
-      <h4 class="lg:col-span-2 md:col-span-1">The science of a button: build a design system</h4>
-      <p>CSS Day 2024</p>
-      <p>Jan 24th 2024</p>
-      <a href="https://2024.cssday.it/workshop/design-system.html">Grab your ticket →</a>
+  <section id="upcoming" class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
+    <div class="flex items-center md:gap-4 sm:gap-2 gap-2">
+      <p class="animate-pulse text-emerald-500">●</p>
+      <h2>Upcoming</h2>
     </div>
-    <div class="border-t border-neutral-950 pt-2 grid lg:grid-cols-5 md:grid-cols-1 lg:gap-4 md:gap-2 ">
+    <div class="border-t border-neutral-950 pt-2 grid lg:grid-cols-5 md:grid-cols-1 lg:gap-4 md:gap-2 items-start">
+      <h3 class="lg:col-span-2 md:col-span-1 animate-pulse">The science of a button: build a design system</h3>
+      <p class="">CSS Day 2024</p>
+      <p>Jan 24th 2024</p>
+      <!-- <a href="https://2024.cssday.it/workshop/design-system.html">🎟 Grab your ticket →</a> -->
+      <button onclick="window.location.href='https://2024.cssday.it/workshop/design-system.html';" type="button" class="button button--primary button--default">🎟 Grab your ticket ↗︎</button>
+    </div>
+    <!-- <div class="border-t border-neutral-950 pt-2 grid lg:grid-cols-5 md:grid-cols-1 lg:gap-4 md:gap-2 ">
       <h4 class="lg:col-span-2 md:col-span-1">The science of a button: build a design system</h4>
       <p>UX Day 2024</p>
       <p>TBA</p>
       <a href="">TBA</a>
-    </div>
+    </div> -->
   </section>
   <section class="flex flex-col md:gap-8 sm:gap-4 gap-4 md:py-8 sm:py-4 py-4">
     <h3>Past</h3>
@@ -203,13 +217,13 @@
       <img src="src/figma.svg" alt="">
       <div class="flex flex-col gap-2 items-start">
         <h4>Master design systems & Figma</h4>
-        <button class="button button--primary button--small">Start here</button></div>
+        <button onclick="window.location.href='https://27ooqwgxabp.typeform.com/to/kdO2QGAR';" class="button button--primary button--small">Start here</button></div>
     </div>
     <div class="card">
       <img src="src/courses.svg" alt="">
       <div class="flex flex-col gap-2 items-start">
         <h4>Cannot find what you’re looking for?</h4>
-        <button class="button button--secondary button--small">Request a course</button></div>
+        <button onclick="window.location.href='https://27ooqwgxabp.typeform.com/to/kdO2QGAR';" class="button button--secondary button--small">Request a course</button></div>
     </div>
   </section>
 
