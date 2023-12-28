@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
+  <script type="module" src="src/myCard.js"></script>
 </head>
 <body class="bg-neutral-100">
   <header>
@@ -13,14 +14,14 @@
         <!-- <li><a href="pages/styleguide.html" class="text-xl">Styleguide</a></li> -->
         <li><a href="#our-offer" class="text-xl">Our Offer</a></li>
         <li><a href="#how-it-works" class="text-xl">How it works</a></li>
-        <li><a href="#upcoming" class="text-xl">Upcoming</a></li>
+        <li><a href="#upcoming" class="text-xl"><span class="animate-pulse text-emerald-500 no-underline">● </span>Upcoming</a></li>
         <li><a href="https://27ooqwgxabp.typeform.com/to/kdO2QGAR" target="_blank" class="text-xl">Request a course ↗︎</a></li>
       </ul>
     </div>
     <div class="flex sm:flex md:hidden flex-row justify-between items-center py-4 px-4">
       <img src="src/logo-mobile.svg" alt="">
       <ul class="flex gap-8">
-        <li><a href="" class="text-xl">Request course ↗︎</a></li>
+        <li><a href="#upcoming" class="text-xl">Next course ↓</a></li>
       </ul>
     </div>
   </header>
@@ -132,7 +133,11 @@
         <p class="">CSS Day 2024, Faenza (RA) Italy 🇮🇹</p>
         <p>Apr 4th 2024</p>
       </div>
-      <button onclick="window.location.href='https://2024.cssday.it/workshop/design-system.html';" type="button" class="button button--primary button--default">🎟 Grab your ticket ↗︎</button>
+      <button 
+        onclick="window.location.href='https://2024.cssday.it/workshop/design-system.html';" 
+        type="button" class="button button--primary button--default">
+        🎟 Grab your ticket ↗︎
+      </button>
     </div>
     <!-- <div class="border-t border-neutral-950 pt-2 grid lg:grid-cols-5 md:grid-cols-1 lg:gap-4 md:gap-2 ">
       <h4 class="lg:col-span-2 md:col-span-1">The science of a button: build a design system</h4>
@@ -199,7 +204,7 @@
   <section class="flex flex-col md:gap-8 sm:gap-4 gap-4 py-8">
     <h2>Meet Your Mentor</h2>
     <div class="grid md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-4">
-      <img src="src/me.jpeg" alt="" class="rounded-3xl hover:saturate-50 transition ease-in-out">
+      <img src="src/me.jpeg" alt="" class="rounded-3xl hover:rounded-full hover:saturate-50 transition ease-in-out">
       <div class="card flex-col">
         <p>
           Hi there 👋, my name is Filippo Gianessi, I’m a senior product designer and agile enthusiast.
@@ -227,6 +232,8 @@
         <button onclick="window.location.href='https://27ooqwgxabp.typeform.com/to/kdO2QGAR';" class="button button--secondary button--small">Request a course</button></div>
     </div>
   </section>
+
+  <my-card></my-card>
 
 </body>
 </html>
