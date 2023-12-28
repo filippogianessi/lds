@@ -74,6 +74,6 @@ h5 {
   @apply lg:text-xl md:text-lg text-lg;
 }
 
-p {
+p, a {
   @apply lg:text-2xl md:text-xl text-xl;
 }
