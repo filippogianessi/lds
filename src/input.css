@@ -26,7 +26,13 @@ section {
 }
 
 .button {
-  @apply py-4 px-8 rounded-3xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 text-2xl ;
+  @apply focus:ring-offset-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-90 ;
+}
+.button--default {
+  @apply py-4 px-8 text-2xl rounded-3xl;
+}
+.button--small {
+  @apply py-2 px-4 text-xl rounded-2xl;
 }
 .button--primary {
   @apply bg-neutral-950 text-white hover:bg-yellow-950 shadow-md transition ease-in-out;
@@ -76,4 +82,9 @@ h5 {
 
 p, a {
   @apply lg:text-2xl md:text-xl text-xl;
+}
+
+a {
+  @apply underline hover:text-yellow-700 focus:ring-offset-2 focus:ring-offset-neutral-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-90;
+  font-weight: 600;
 }
