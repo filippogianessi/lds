@@ -43,10 +43,16 @@ section {
 }
 
 .card {
-  @apply md:p-10 sm:p-6 p-6 flex md:flex-col sm:flex-col flex-col md:gap-4 sm:gap-2 gap-2 items-start rounded-3xl bg-gradient-to-b from-white to-neutral-100;
+  @apply md:p-10 sm:p-6 p-6 flex md:gap-4 sm:gap-2 gap-2 items-start rounded-3xl bg-gradient-to-b from-white to-neutral-100;
 }
 .card--highlight {
   @apply bg-gradient-to-b from-yellow-50 to-neutral-100;
+}
+.card--row {
+  @apply lg:flex-row sm:flex-col flex-col lg:items-start lg:flex-wrap lg:gap-8 sm:gap-2 gap-2;
+}
+.card--col {
+  @apply md:flex-col sm:flex-col flex-col;
 }
 
 .badge {
