@@ -3,7 +3,24 @@ import {LitElement, html, css} from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core
 // Assume `myStyles` is a string containing your CSS rules.
 const myStyles = css`
   /* Your Tailwind CSS extracted for this component */
-  .card { @apply md:p-10 sm:p-6 p-6 flex md:gap-4 sm:gap-2 gap-2 items-start rounded-3xl bg-gradient-to-b from-white to-neutral-100; }
+  .card {
+    display: flex;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    align-items: flex-start;
+    border-radius: 1.5rem;
+    background-image: background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    background-color: #ffffff;
+
+    @media (min-width: 640px) {
+      padding: 1.5rem;
+    gap: 0.5rem;
+     }
+    @media (min-width: 768px) {
+      padding: 2.5rem;
+    gap: 1rem;
+     }
+   }
 `;
 
 export class MyCard extends LitElement {
