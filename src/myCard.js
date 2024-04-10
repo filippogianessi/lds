@@ -22,9 +22,8 @@ const myStyles = css`
 `;
 
 export class MyCard extends LitElement {
-  static styles = [myStyles];
   @property() body: string = '';
-
+  static styles = [myStyles];
   render() {
     return html`<div class="card">${this.body}</div>`;
   }
