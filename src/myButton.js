@@ -12,11 +12,15 @@ const myStyles = css`
   }
   .button--primary {
     color: #ffffff; 
+    background-color: #0a0a0a;
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+  }
+  .button--primary:hover {
+    background-color: #292400;
   }
   .animate-pulse {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
